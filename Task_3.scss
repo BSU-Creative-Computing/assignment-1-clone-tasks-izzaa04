@@ -1,7 +1,18 @@
-.image {
-  background-color: #8ccff7;
+$bgcolor: #8ccff7;
+$color-one: #4e89ae;
+$color-two: #43658b;
+$color-three: #ed6663;
+$color-four: #ffa372;
+$hover: #444;
+
+@mixin center-element {
   display: flex;
   justify-content: center;
+}
+
+.image {
+  background-color: $bgcolor;
+  @include center-element();
 }
 
 .lines {
@@ -10,44 +21,43 @@
 }
 
 .lines :hover {
-  background-color: #444;
+  background-color: $hover;
 }
 
 .l1 {
   height: 5vh;
-  background-color: #4e89ae;
+  background-color: $color-one;
 }
 
 .l2 {
   height: 5vh;
-  background-color: #43658b;
+  background-color: $color-two;
 }
 
 .l3 {
   height: 5vh;
-  background-color: #ed6663;
+  background-color: $color-three;
 }
 
 .l4 {
   height: 5vh;
-  background-color: #ffa372;
+  background-color: $color-four;
 }
 
 .circles {
   padding-top: 50px;
   padding-bottom: 50px;
-  display: flex;
-  justify-content: center;
+  @include center-element();
 }
 
 .circles :hover {
-  background-color: #444;
+  background-color: $hover;
 }
 
 .c1 {
   height: 70px;
   width: 70px;
-  background-color: #4e89ae;
+  background-color: $color-one;
   border-radius: 70px;
   display: inline-block;
   margin-right: 10px;
@@ -56,7 +66,7 @@
 .c2 {
   height: 80px;
   width: 80px;
-  background-color: #43658b;
+  background-color: $color-two;
   border-radius: 80px;
   display: inline-block;
   margin-right: 10px;
@@ -65,7 +75,7 @@
 .c3 {
   height: 90px;
   width: 90px;
-  background-color: #ed6663;
+  background-color: $color-three;
   border-radius: 90px;
   display: inline-block;
   margin-right: 10px;
@@ -74,13 +84,13 @@
 .c4 {
   height: 100px;
   width: 100px;
-  background-color: #ffa372;
+  background-color: $color-four;
   border-radius: 100px;
   display: inline-block;
   margin-right: 10px;
 }
 
 footer {
-  background-color: #8ccff7;
+  background-color: $bgcolor;
   height: 50px;
-}/*# sourceMappingURL=Task_3.css.map */
+}
