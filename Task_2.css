@@ -1,119 +1,207 @@
-.header {
-  background-color: rgb(73, 141, 204);
-  width: 100%;
-}
-
-h2 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: white;
-  padding-left: 20px;
-}
-
-nav {
-  margin-bottom: 1.5rem;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: row;
-  color: white;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-  margin-right: 10px;
-}
-
-.nav-links {
-  align-self: center;
-  display: none;
-}
-
-.menu {
-  align-self: center;
-}
-
-a {
-  align-self: center;
-}
-
-.search {
-  padding: 6px;
-  margin: auto;
-  border: none;
-  display: none;
-  width: 170px;
-  height: 17px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background-color: rgb(235, 235, 235);
+  background-color: #d9cdcd;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-  gap: 1rem;
-  margin: 0 auto;
-  max-width: 80rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.item1 {
+nav {
   display: flex;
-  flex-direction: column;
-  padding: 20px;
-  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e90ff;
+  padding: 15px 15px;
+  margin-bottom: 6px;
 }
 
-.item2 {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  gap: 1rem;
+nav h2 {
+  color: #f4f4f4;
+  margin-right: 6.5rem;
 }
 
-.block {
-  box-shadow: 1px 1px 5px rgb(167, 167, 167);
-  background-color: white;
-  padding-bottom: 10px;
-  display: flex;
-  flex-direction: column;
+.logo {
+  font-weight: 800;
+  cursor: pointer;
 }
 
-img {
-  max-width: 100%;
-}
-
-.block1 {
-  display: flex;
-  align-self: end;
-  flex-direction: column;
-  padding-bottom: 10px;
-}
-
-button {
-  background-color: rgb(73, 141, 204);
-  border: none;
-  align-self: end;
-  color: white;
+.search {
+  width: 300px;
+  height: 35px;
+  font-size: 18px;
   padding: 10px;
-  margin-right: 10px;
-  text-align: center;
-  border-radius: 2px;
-  font-size: 15px;
+  border: none;
 }
 
-p {
-  padding: 20px;
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1vh;
+}
+
+.menucontainer {
+  display: none;
 }
 
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 40px 40px;
+}
+
+.moviecontent {
+  background-color: #fff;
+  margin: 5px;
+}
+
+.leftcontainer img {
+  max-width: 100%;
+}
+
+.rightcontainer img {
+  max-width: 100%;
+  width: 220px;
+  height: 240px;
+}
+
+.leftcontainer h3 {
+  padding: 10px 12px 6px 12px;
+}
+
+.leftcontainer p {
+  padding: 0px 12px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.rightcontainer h3 {
+  padding: 1px 1px;
+}
+
+.rightcontainer p {
+  padding: 3px 1px;
+  line-height: 22px;
+}
+
+button {
+  display: block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin: 10px 1px 2px auto;
+  border: none;
+  border-radius: 2px;
+}
+
+.leftcontainer button {
+  margin: 10px 12px 12px auto;
+}
+
+.topcontainer .rightcontainermoviecontent:last-child button {
+  margin: 53px 1px 2px auto;
+}
+
+.moviescontainer {
+  display: flex;
+  justify-content: center;
+  max-width: 80rem;
   margin: 0 auto;
-  max-width: 60rem;
+}
+
+.leftcontainer {
+  display: flex;
+  flex-basis: 500px;
+  height: fit-content;
+}
+
+.rightcontainer {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 410px;
+}
+
+.topcontainer,
+.bottomcontainer {
+  display: flex;
+}
+
+.rightcontainermoviecontent {
+  flex: 1;
+  padding: 10px 10px;
+}
+
+@media (min-width: 801px) and (max-width: 1024px) {
+  .topcontainer,
+  .bottomcontainer {
+    flex-direction: column;
+  }
+
+  .rightcontainer {
+    flex-basis: 250px;
+  }
+
+  .leftcontainer {
+    flex-basis: 480px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 800px) {
+  .moviescontainer {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .rightcontainer img {
+    width: auto;
+    height: auto;
+  }
+
+  .leftcontainer {
+    flex-basis: 480px;
+    height: auto;
+  }
+
+  .navitems,
+  .searchcontainer {
+    display: none;
+  }
+
+  .menucontainer {
+    display: block;
+  }
+
+  nav h2 {
+    margin-right: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .moviescontainer {
+    flex-direction: column;
+  }
+
+  .topcontainer,
+  .bottomcontainer {
+    flex-direction: column;
+  }
+
+  .rightcontainer img {
+    width: auto;
+    height: auto;
+  }
+
+  .navitems,
+  .searchcontainer {
+    display: none;
+  }
+
+  .menucontainer {
+    display: block;
+  }
+
+  nav h2 {
+    margin-right: 2px;
+  }
 }

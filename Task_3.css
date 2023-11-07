@@ -2,8 +2,8 @@
   background-color: #8ccff7;
   display: flex;
   justify-content: center;
+  content: url("https://via.placeholder.com/200");
 }
-
 .lines {
   padding-top: 50px;
   padding-bottom: 50px;

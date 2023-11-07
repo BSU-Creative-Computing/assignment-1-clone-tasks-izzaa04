@@ -3,54 +3,105 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task 2</title>
     <link rel="stylesheet" href="Task_2.css" />
+    <title>Document</title>
   </head>
   <body>
-    <div class="header">
+    <header>
       <nav>
-        <a>What's On</a>
-        <input type="text" class="search" placeholder="Search.." />
-        <div class="menu"><a>Menu</a></div>
-        <div class="nav-links">
-          <a href="#movies">Movies</a>
-          <a href="#tv">TV</a>
-          <a href="#login">Login</a>
-          <a href="#register">Register</a>
+        <div class="logo">
+          <h2>What's On</h2>
+        </div>
+
+        <div class="searchcontainer">
+          <input class="search" type="search" placeholder="Search..." />
+        </div>
+
+        <div class="navitems">
+          <ul>
+            <a href="#">Movies</a>
+            <a href="#">TV</a>
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+          </ul>
+        </div>
+        <div class="menucontainer">
+          <h2>Menu</h2>
         </div>
       </nav>
-    </div>
-    <div class="container">
-      <div class="block block1">
-        <img src="avengers.jpg" />
-        <p>kjnjhasbjxhxjhbkbw</p>
-        <button>More info...</button>
+    </header>
+
+    <section class="moviescontainer">
+      <div class="leftcontainer">
+        <div class="moviecontent">
+          <img src="avengers.jpg" />
+          <div>
+            <h3>Avengers - Endgame</h3>
+            <p>
+              After the devastating events of Avengers: Infinity War (2018), the
+              universe is in ruins. With the help of remaining allies, the
+              Avengers assemble once more in order to reverse Thanos' actions
+              and restore balance to the universe.
+            </p>
+            <button>More Info...</button>
+          </div>
+        </div>
       </div>
-      <div class="item1">
-        <div class="block block2">
-          <img src="lone-gunmen.jpg" />
-          <p>kjnjhasbjxhxjhbkbw</p>
-          <button>More info...</button>
+
+      <div class="rightcontainer">
+        <div class="topcontainer">
+          <div class="moviecontent rightcontainermoviecontent">
+            <img src="lone-gunmen.jpg" />
+            <div>
+              <h3>The Lone Gunmen</h3>
+              <p>
+                The X-Files' Lone Gunmen, investigate crimes and conspiracies,
+                often in a silly, comedic and over the top fashion.
+              </p>
+              <button>More Info...</button>
+            </div>
+          </div>
+
+          <div class="moviecontent rightcontainermoviecontent">
+            <img src="millenium.jpg" />
+            <div>
+              <h3>Millenium Trilogy</h3>
+              <p>
+                The adventures of journalist Mikael Blomkvist and hacker Lisbeth
+                Salander.
+              </p>
+              <button>More Info...</button>
+            </div>
+          </div>
         </div>
-        <div class="block block3">
-          <img src="millenium.jpg" />
-          <p>kjnjhasbjxhxjhbkbw</p>
-          <button>More info...</button>
-        </div>
-        <div class="item2">
-          <div class="block block4">
+
+        <div class="bottomcontainer">
+          <div class="moviecontent rightcontainermoviecontent">
             <img src="predators.jpg" />
-            <p>kjnjhasbjxhxjhbkbw</p>
-            <button>More info...</button>
+            <div>
+              <h3>Predators</h3>
+              <p>
+                A group of elite warriors parachute into an unfamiliar jungle
+                and are hunted by members of a merciless alien race.
+              </p>
+              <button>More Info...</button>
+            </div>
           </div>
-          <div class="block block5">
+
+          <div class="moviecontent rightcontainermoviecontent">
             <img src="rage.jpg" />
-            <p>kjnjhasbjxhxjhbkbw</p>
-            <button>More info...</button>
+            <div>
+              <h3>Rage</h3>
+              <p>
+                When the daughter of a reformed criminal is kidnapped, he rounds
+                up his old crew and seeks his own brand of justice.
+              </p>
+              <button>More Info...</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <footer>Copyright &copy; 2023 What's On</footer>
+    </section>
+    <footer>Copyrigtht &copy; 2021 What's On</footer>
   </body>
 </html>
