@@ -1,0 +1,119 @@
+.header {
+  background-color: rgb(73, 141, 204);
+  width: 100%;
+}
+
+h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  padding-left: 20px;
+}
+
+nav {
+  margin-bottom: 1.5rem;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+}
+
+.nav-links {
+  align-self: center;
+  display: none;
+}
+
+.menu {
+  align-self: center;
+}
+
+a {
+  align-self: center;
+}
+
+.search {
+  padding: 6px;
+  margin: auto;
+  border: none;
+  display: none;
+  width: 170px;
+  height: 17px;
+}
+
+body {
+  background-color: rgb(235, 235, 235);
+}
+
+.container {
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 80rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.item1 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 1rem;
+}
+
+.item2 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 1rem;
+}
+
+.block {
+  box-shadow: 1px 1px 5px rgb(167, 167, 167);
+  background-color: white;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+}
+
+.block1 {
+  display: flex;
+  align-self: end;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+button {
+  background-color: rgb(73, 141, 204);
+  border: none;
+  align-self: end;
+  color: white;
+  padding: 10px;
+  margin-right: 10px;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 15px;
+}
+
+p {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 60rem;
+}
