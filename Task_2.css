@@ -1,3 +1,4 @@
+/*formatting the page as per requrements*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,6 +10,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/*using flex to arrange the navigation bar and formatting the elements in it such as logo, search bar and menu*/
 nav {
   display: flex;
   justify-content: space-between;
@@ -42,15 +44,18 @@ nav a {
   margin: 0 1vh;
 }
 
+/*for media query requirement at a certain viewpoint*/
 .menucontainer {
   display: none;
 }
 
+/*formatting footer*/
 footer {
   text-align: center;
   padding: 40px 40px;
 }
 
+/*formatting movie content such as images, text and headings*/
 .moviecontent {
   background-color: #fff;
   margin: 5px;
@@ -86,6 +91,7 @@ footer {
   line-height: 22px;
 }
 
+/*formatting the buttons*/
 button {
   display: block;
   background-color: #007bff;
@@ -104,6 +110,7 @@ button {
   margin: 53px 1px 2px auto;
 }
 
+/*arranging the items in required manner i.e. to the left and right by setting left and right containers*/
 .moviescontainer {
   display: flex;
   justify-content: center;
@@ -123,6 +130,7 @@ button {
   flex-basis: 410px;
 }
 
+/*adding containers to the top and bottom of the left container to arrange accordingly*/
 .topcontainer,
 .bottomcontainer {
   display: flex;
@@ -133,6 +141,7 @@ button {
   padding: 10px 10px;
 }
 
+/*adding media queries at different viewpoints and formatting items to adjust according to requirements using flex*/
 @media (min-width: 801px) and (max-width: 1024px) {
   .topcontainer,
   .bottomcontainer {

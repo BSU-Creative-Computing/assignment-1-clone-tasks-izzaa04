@@ -1,9 +1,14 @@
+/*setting variables for colors used in the page*/
+/*adding mixin for center alignment*/
+/*adding mixin for each breakpoint where the elements change in anyway*/
+/*formatting header and image*/
 .container {
   background-color: #8ccff7;
   display: flex;
   justify-content: center;
 }
 
+/*formatting lines and giving the height and color, adding hover*/
 .lines {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -33,6 +38,7 @@
   background-color: #ffa372;
 }
 
+/*formatting circles, giving the radius, width, height and color. adding hover and adjusting display of the circles*/
 .circles {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -80,11 +86,13 @@
   margin-right: 10px;
 }
 
+/*formatting footer*/
 footer {
   background-color: #8ccff7;
   height: 50px;
 }
 
+/*applying the breakpoints using mixin*/
 @media (max-width: 480px) {
   .image300,
   .image400 {
@@ -109,6 +117,7 @@ footer {
     display: none;
   }
 }
+/*arranging the circles vertically at a certain viewpoint*/
 @media (max-width: 621px) {
   .circles {
     display: flex;

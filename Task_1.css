@@ -1,3 +1,14 @@
+/*formatting the logo to the left side of the page with appropriate size*/
+header {
+  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  display: flex;
+  margin: 0 auto;
+  max-width: 64rem;
+}
+
+/*arranging the images in required manner using flex*/
 .images {
   display: flex;
   flex-direction: column;
@@ -15,15 +26,7 @@
   flex-direction: column;
 }
 
-header {
-  padding-bottom: 20px;
-  padding-top: 10px;
-  padding-left: 10px;
-  display: flex;
-  margin: 0 auto;
-  max-width: 64rem;
-}
-
+/*aligning the text with the images and logo*/
 .text {
   margin: 0 auto;
   max-width: 64rem;
@@ -33,6 +36,7 @@ p {
   padding: 10px 0px 0px 10px;
 }
 
+/*aligning and formatting the footer according to requirements*/
 footer {
   text-align: center;
   background-color: rgb(27, 26, 26);
@@ -42,12 +46,13 @@ footer {
   max-width: 64rem;
 }
 
+/*adding media queries to make the webpage reponsive at certain viewpoints*/
 @media (min-width: 481px) {
   .images {
     flex-direction: row;
   }
 }
-
+/*using grid to align the images in reqired format*/
 @media (min-width: 1024px) {
   .all_images {
     display: grid;

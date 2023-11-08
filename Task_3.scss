@@ -1,3 +1,4 @@
+/*setting variables for colors used in the page*/
 $bgcolor: #8ccff7;
 $color-one: #4e89ae;
 $color-two: #43658b;
@@ -5,11 +6,13 @@ $color-three: #ed6663;
 $color-four: #ffa372;
 $hover: #444;
 
+/*adding mixin for center alignment*/
 @mixin center-element {
   display: flex;
   justify-content: center;
 }
 
+/*adding mixin for each breakpoint where the elements change in anyway*/
 @mixin breakpoint($point) {
   @if $point == small {
     @media (max-width: 480px) {
@@ -34,11 +37,13 @@ $hover: #444;
   }
 }
 
+/*formatting header and image*/
 .container {
   background-color: $bgcolor;
   @include center-element();
 }
 
+/*formatting lines and giving the height and color, adding hover*/
 .lines {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -68,6 +73,7 @@ $hover: #444;
   background-color: $color-four;
 }
 
+/*formatting circles, giving the radius, width, height and color. adding hover and adjusting display of the circles*/
 .circles {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -114,11 +120,13 @@ $hover: #444;
   margin-right: 10px;
 }
 
+/*formatting footer*/
 footer {
   background-color: $bgcolor;
   height: 50px;
 }
 
+/*applying the breakpoints using mixin*/
 @include breakpoint(small) {
   .image300,
   .image400 {
@@ -144,6 +152,7 @@ footer {
   }
 }
 
+/*arranging the circles vertically at a certain viewpoint*/
 @include breakpoint(vertical) {
   .circles {
     display: flex;
